@@ -1,0 +1,365 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.4 "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat;
+	background-position: center top;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 2px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+hr {
+  color: #000000;
+  background-color: #000000;
+  height: 1px;
+  border: 0;
+  width: 90%;
+  margin-bottom: 12px;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: square;
+	margin-left: 30px;
+	margin-bottom: 15px;
+}
+
+ul.nav a, ul.nav a:visited {
+	color:#ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
+	color: #ff9f34;
+}
+
+.nav li {
+	padding: 1px 0;
+}
+
+.nav {
+	color: #ffffff;
+}
+
+ul.content {
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+	padding-left: 45px;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 955px;
+	background-color: #ffffff;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	width: 955px;
+	height: 407px;
+	padding: 6px 6px 0px 6px;
+}
+
+.navpool {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_pool.jpg);
+	background-repeat: no-repeat;
+	background-color: #3b85a0;
+	margin-left: 6px;
+}
+
+.navinground {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_inground.jpg);
+	background-repeat: no-repeat;
+	background-color: #a8aeb7;
+	margin-left: 6px;
+}
+
+.navportable {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_portable.jpg);
+	background-repeat: no-repeat;
+	background-color: #bebcbf;
+	margin-left: 6px;
+}
+
+.navchamp {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_champ.jpg);
+	background-repeat: no-repeat;
+	background-color: #bebcbf;
+	margin-left: 6px;
+}
+
+.navattack {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_attack.jpg);
+	background-repeat: no-repeat;
+	background-color: #bebcbf;
+	margin-left: 6px;
+}
+
+.navjam {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_jam.jpg);
+	background-repeat: no-repeat;
+	background-color: #bebcbf;
+	margin-left: 6px;
+}
+
+.navtitan {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_titan.jpg);
+	background-repeat: no-repeat;
+	background-color: #163217;
+	margin-left: 6px;
+}
+
+.navforce {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_force.jpg);
+	background-repeat: no-repeat;
+	background-color: #163217;
+	margin-left: 6px;
+}
+
+.navslam {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_slam.jpg);
+	background-repeat: no-repeat;
+	background-color: #413937;
+	margin-left: 6px;
+}
+
+.navfixed {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_fixed.jpg);
+	background-repeat: no-repeat;
+	background-color: #9cc3d3;
+	margin-left: 6px;
+}
+
+.navsoccer {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_soccer.jpg);
+	background-repeat: no-repeat;
+	background-color: #5a6b3d;
+	margin-left: 6px;
+}
+
+.navtennis {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_tennis.jpg);
+	background-repeat: no-repeat;
+	background-color: #634b3b;
+	margin-left: 6px;
+}
+
+.navhydrochamp {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_hydrochamp.jpg);
+	background-repeat: no-repeat;
+	background-color: #3b85a0;
+	margin-left: 6px;
+}
+
+.navpoolchamp {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_poolchamp.jpg);
+	background-repeat: no-repeat;
+	background-color: #3b85a0;
+	margin-left: 6px;
+}
+
+.navcolored {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_colored.jpg);
+	background-repeat: no-repeat;
+	background-color: #f1b291;
+	margin-left: 6px;
+}
+
+.navacrylic {
+	float: left;
+	width: 231px;
+	height: auto;
+	color: #ffffff;
+	background-image: url(images/navigation_acrylic.jpg);
+	background-repeat: no-repeat;
+	background-color: #57a66c;
+	background-positon: top;
+	margin-left: 6px;
+}
+
+.content {
+	width: 716px;
+	float: left;
+}
+
+#contact-area {
+	width: 400px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+#contact-area div {
+	clear:both;
+	margin: 0;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 390px;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #f8a134;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	font-size:small;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	width: 175px;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	width: 525px;
+	margin-right: 8px;
+}
+
+.description {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	width: 525px;
+	margin-left: 8px;
+	padding-top: 7px;
+	padding-bottom: 5px;
+}
+.adjustimage { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	width: 175px;
+	margin-right: 8px;
+	padding-top: 7px;
+	padding-bottom: 5px;
+}
+
+.fltlftpkg { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	width: 350px;
+	margin-right: 8px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.fltrtpkg {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	width: 340px;
+	margin-left: 8px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
