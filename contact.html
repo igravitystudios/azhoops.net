@@ -64,10 +64,10 @@
       <h2>Get a Free Catalog!</h2>
       <p>For a free catalog, please provide the following contact information so that we can get a hoops catalog out to you. No worries – we will not sell your information to anybody! We plan to ship your free catalog to you within 24-48 hours.</p>
       <p>
-        <form method="post" action="" id="contact-area">
+        <form method="POST" action="https://formspree.io/heninger@gmail.com" id="contact-area">
           <div>
             <label for="Name">Name:</label>
-            <input type="text" name="Name" id="Name" value="" class="required" />
+            <input type="text" name="Name" id="Name" value="" class="required" required />
           </div>
           <div>
             <label for="Sport">Sport (Basketball, Soccer, Football, Volleyball, Lacross):</label>
@@ -87,12 +87,13 @@
           </div>
           <div>
             <label for="Email">E-mail Address:</label>
-            <input type="text" name="Email" id="Email" value="" class="required email" />
+            <input type="text" name="Email" id="Email" value="" class="required email" required />
           </div>
           <div>
             <label for="Contact">Preferred Method of Contact (Mail, Phone, or E-mail):</label>
             <input type="text" name="Contact" id="Contact" value="" class="required" />
           </div>
+          <input type="text" name="_gotcha" style="display:none" />
           <div>
             <input type="submit" name="submit" value="Submit" class="submit-button" />
           </div>
