@@ -272,6 +272,10 @@ ul.content {
 	margin-left: 6px;
 }
 
+.sidenav img {
+	margin-bottom: -10px;
+}
+
 .content {
 	width: 716px;
 	float: left;
