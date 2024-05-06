@@ -456,8 +456,9 @@ ul.content {
     margin: 0;
     padding: 16px;
   }
-  .fltrt img {
+  .description {
     width: 100%;
+    margin: 0;
   }
   .mobile-menu {
     display: flex;
