@@ -287,8 +287,9 @@ ul.content {
   margin-left: 6px;
 }
 
-.sidenav img {
-  margin-bottom: -10px;
+.sidenav {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .content {
@@ -411,9 +412,13 @@ ul.content {
     width: auto;
     height: 100%;
     margin-left: 0;
-    padding: 16px;
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
     background-size: 100%;
+    border-radius: 0;
+    overflow-y: scroll;
+  }
+  .sidenav--inner {
+    padding: 16px;
     padding-top: 72px; /* account for mobile menu button */
   }
   .sidenav img {
@@ -458,6 +463,9 @@ ul.content {
     width: 100%;
     float: none;
     margin: 0;
+  }
+  .fltrt img {
+    margin-left: 16px;
   }
   .fltlftpkg,
   .fltrtpkg {
