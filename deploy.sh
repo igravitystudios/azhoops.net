@@ -12,7 +12,7 @@ check_clean_working_directory() {
 }
 
 # Ensure we're on the main branch and it's clean
-git checkout mobile-responsive
+git checkout main
 check_clean_working_directory
 
 # Run the build command
@@ -43,9 +43,9 @@ git add .
 commit_date=$(date +"%Y-%m-%d")
 
 echo $commit_date
-# git commit -m "$commit_date"
+git commit -m "$commit_date"
 
 # Push changes
-# git push origin gh-pages
+git push origin gh-pages
 
 echo "Deployment completed successfully!"
