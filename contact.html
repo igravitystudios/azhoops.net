@@ -25,46 +25,68 @@ navigationClass: navpool
     action="https://formspree.io/john@azhoops.net"
     id="contact-area"
   >
-    <label for="Name">Name<span class="red">*</span></label>
-    <input
-      type="text"
-      name="Name"
-      id="Name"
-      value=""
-      class="required"
-      required
-    />
-    <label for="Sport">Sport<span class="red">*</span></label>
-    <select name="Sport" id="Sport" class="required">
-      <option value="Basketball" selected>Basketball</option>
-      <option value="Soccer">Soccer</option>
-      <option value="Football">Football</option>
-      <option value="Volleyball">Volleyball</option>
-      <option value="Lacrosse">Lacrosse</option>
-      <option value="Other">Other</option>
-    </select>
-    <label for="Address">Street Address</label>
-    <input type="text" name="Address" id="Address" value="" class="required" />
-    <label for="City">City / State / Zip Code</label>
-    <input type="text" name="City" id="City" value="" class="required" />
-    <label for="Phone">Phone Number:</label>
-    <input type="text" name="Phone" id="Phone" value="" class="required" />
-    <label for="Email">E-mail Address<span class="red">*</span></label>
-    <input
-      type="text"
-      name="Email"
-      id="Email"
-      value=""
-      class="required email"
-      required
-    />
-    <label for="Contact">Preferred Method of Contact</label>
-    <select name="Contact" id="Contact" class="required">
-      <option value="Email" selected>Email</option>
-      <option value="Phone">Phone</option>
-      <option value="Mail">Mail</option>
-    </select>
-    <input type="text" name="_gotcha" style="display: none" />
-    <input type="submit" name="submit" value="Submit" class="submit-button" />
+    <div>
+      <label for="Name">Name<span class="red">*</span></label>
+      <input
+        type="text"
+        name="Name"
+        id="Name"
+        value=""
+        class="required"
+        required
+      />
+    </div>
+    <div>
+      <label for="Sport">Sport<span class="red">*</span></label>
+      <select name="Sport" id="Sport" class="required">
+        <option value="Basketball" selected>Basketball</option>
+        <option value="Soccer">Soccer</option>
+        <option value="Football">Football</option>
+        <option value="Volleyball">Volleyball</option>
+        <option value="Lacrosse">Lacrosse</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="Address">Street Address</label>
+      <input
+        type="text"
+        name="Address"
+        id="Address"
+        value=""
+        class="required"
+      />
+    </div>
+    <div>
+      <label for="City">City / State / Zip Code</label>
+      <input type="text" name="City" id="City" value="" class="required" />
+    </div>
+    <div>
+      <label for="Phone">Phone Number:</label>
+      <input type="text" name="Phone" id="Phone" value="" class="required" />
+    </div>
+    <div>
+      <label for="Email">E-mail Address<span class="red">*</span></label>
+      <input
+        type="text"
+        name="Email"
+        id="Email"
+        value=""
+        class="required email"
+        required
+      />
+    </div>
+    <div>
+      <label for="Contact">Preferred Method of Contact</label>
+      <select name="Contact" id="Contact" class="required">
+        <option value="Email" selected>Email</option>
+        <option value="Phone">Phone</option>
+        <option value="Mail">Mail</option>
+      </select>
+    </div>
+    <div>
+      <input type="text" name="_gotcha" style="display: none" />
+      <input type="submit" name="submit" value="Submit" class="submit-button" />
+    </div>
   </form>
 </div>
