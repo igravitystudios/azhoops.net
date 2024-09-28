@@ -309,7 +309,8 @@ ul.content {
 }
 
 #contact-area input,
-#contact-area textarea {
+#contact-area textarea,
+#contact-area select {
   padding: 5px;
   width: 390px;
   margin: 0px 0px 10px 0px;
@@ -538,4 +539,7 @@ ul.content {
 }
 .flex {
   display: flex;
+}
+.red {
+  color: red;
 }

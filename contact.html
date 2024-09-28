@@ -25,7 +25,7 @@ navigationClass: navpool
     action="https://formspree.io/john@azhoops.net"
     id="contact-area"
   >
-    <label for="Name">Name:</label>
+    <label for="Name">Name<span class="red">*</span></label>
     <input
       type="text"
       name="Name"
@@ -34,17 +34,22 @@ navigationClass: navpool
       class="required"
       required
     />
-    <label for="Sport"
-      >Sport (Basketball, Soccer, Football, Volleyball, Lacross):</label
-    >
-    <input type="text" name="Sport" id="Sport" value="" />
-    <label for="Address">Street Address:</label>
+    <label for="Sport">Sport<span class="red">*</span></label>
+    <select name="Sport" id="Sport" class="required">
+      <option value="Basketball" selected>Basketball</option>
+      <option value="Soccer">Soccer</option>
+      <option value="Football">Football</option>
+      <option value="Volleyball">Volleyball</option>
+      <option value="Lacrosse">Lacrosse</option>
+      <option value="Other">Other</option>
+    </select>
+    <label for="Address">Street Address</label>
     <input type="text" name="Address" id="Address" value="" class="required" />
-    <label for="City">City / State / Zip Code:</label>
+    <label for="City">City / State / Zip Code</label>
     <input type="text" name="City" id="City" value="" class="required" />
     <label for="Phone">Phone Number:</label>
     <input type="text" name="Phone" id="Phone" value="" class="required" />
-    <label for="Email">E-mail Address:</label>
+    <label for="Email">E-mail Address<span class="red">*</span></label>
     <input
       type="text"
       name="Email"
@@ -53,10 +58,12 @@ navigationClass: navpool
       class="required email"
       required
     />
-    <label for="Contact"
-      >Preferred Method of Contact (Mail, Phone, or E-mail):</label
-    >
-    <input type="text" name="Contact" id="Contact" value="" class="required" />
+    <label for="Contact">Preferred Method of Contact</label>
+    <select name="Contact" id="Contact" class="required">
+      <option value="Email" selected>Email</option>
+      <option value="Phone">Phone</option>
+      <option value="Mail">Mail</option>
+    </select>
     <input type="text" name="_gotcha" style="display: none" />
     <input type="submit" name="submit" value="Submit" class="submit-button" />
   </form>
