@@ -242,6 +242,16 @@ ul.content {
   margin-left: 6px;
 }
 
+.navvolleyball {
+  float: left;
+  width: 231px;
+  height: auto;
+  color: #ffffff;
+  background-color: #0e1c01;
+  margin-left: 6px;
+  border-radius: 16px;
+}
+
 .navhydrochamp {
   float: left;
   width: 231px;
@@ -283,13 +293,13 @@ ul.content {
   background-image: url(images/navigation_acrylic.jpg);
   background-repeat: no-repeat;
   background-color: #57a66c;
-  background-positon: top;
+  background-position: top;
   margin-left: 6px;
 }
 
 .sidenav {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .content {
